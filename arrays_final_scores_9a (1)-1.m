@@ -1,28 +1,24 @@
- %
-% file i/o
-%
+% Initialize environment
 close all;
 clear all;
 clc;
-%
-% Part A) Import Data - final_scores_example.xlsm
-%
-% - right click on final_scores_example.xlsm and select Import Data
-% - with your mouse select all rows and columns of data
-% - then go to Output Type and select Numeric Matrix
-% - lastly, click on Import Selection button
-% - then in Workspace click on finalscoresexample matrix to display the data
-%
-% open in Workspace the matrix finalscoresexample and by hand
-% change NaN with the number 0
-%
-% save new data to disk "newdatafile"
-% get size of matrix
-%
-save newdatafile finalscoresexample
-size (finalscoresexample)
-%
-% read file newdatafile.mat
-%load newdatafile
-% 
-disp('>>> END of arrays_scores_9a.m <<<')
+
+% Part A) Import Data
+% Import data programmatically from Excel file
+finalscoresexample = xlsread('final_scores_example.xlsm');
+
+% Replace NaN values with 0
+finalscoresexample(isnan(finalscoresexample)) = 0;
+
+% Save new data to disk "newdatafile.mat"
+save('newdatafile.mat', 'finalscoresexample');
+
+% Get size of matrix and display it
+matrix_size = size(finalscoresexample);
+disp('Size of finalscoresexample matrix:');
+disp(matrix_size);
+
+% Read file newdatafile.mat
+load('newdatafile.mat');
+
+disp('>>> END of arrays_scores_9a.m <<<');
