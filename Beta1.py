@@ -10,12 +10,12 @@ Original file is located at
 import streamlit as st
 
 # Your information
-name = "Your Name"
-favorite_food = "Your Favorite Food"
-degree = "Your College Degree"
+name = "Jerry Lu"
+favorite_activiy = "Games"
+degree = "Computer Science"
 
 # Title of the app with your information
 st.title("Welcome to My Streamlit App!")
 st.write(f"**Name**: {name}")
-st.write(f"**Favorite Food**: {favorite_food}")
+st.write(f"**Favorite activity**: {activity_food}")
 st.write(f"**Degree**: {degree}")
