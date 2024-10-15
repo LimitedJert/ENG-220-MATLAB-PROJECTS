@@ -10,12 +10,12 @@ Original file is located at
 import streamlit as st
 
 # Your information
-name = "Jerry Lu"
-favorite_activity = "Games"  # Corrected variable name
-degree = "Computer Science"
+name = "Jerry Lu, "
+favorite_activity = "Games, "  # Corrected variable name
+facorite_color = "Blue, "
 
 # Title of the app with your information
 st.title("Peace Eningeering Class Assignment #5")
 st.write(f"**Name**: {name}")
-st.write(f"**Favorite activity**: {favorite_activity}")  # Corrected variable usage
-st.write(f"**Degree**: {degree}")
+st.write(f"**Facotie Color**: {favorite_cactivity}")  # Corrected variable usage
+st.write(f"**Degree**: {favorite_cactivity}")
