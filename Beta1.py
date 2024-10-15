@@ -15,7 +15,7 @@ favorite_activity = "Games"  # Corrected variable name
 degree = "Computer Science"
 
 # Title of the app with your information
-st.title("Welcome to My Streamlit App!")
+st.title("Peace Eningeering Class Assignment #5")
 st.write(f"**Name**: {name}")
 st.write(f"**Favorite activity**: {favorite_activity}")  # Corrected variable usage
 st.write(f"**Degree**: {degree}")
